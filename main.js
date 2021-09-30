@@ -6,7 +6,7 @@ button.addEventListener("click",(e)=>{
     e.preventDefault()
     let num = 0
     inputs.forEach(x=>(x.classList.remove("warning"),x.parentElement.querySelector("p").classList.remove("visible")))
-    inputs.forEach(x=>x.value===""?(x.classList.add("warning"),x.parentElement.querySelector("p").classList.add("visible")):num+=1)
-    !regex.test(inputs[2].value) ? (inputs[2].classList.add("warning"),inputs[2].parentElement.querySelector("p").classList.add("visible")) : num+=1
+    inputs.forEach(x=>x.value===""?(x.classList.add("warning"),x.placeholder="",x.parentElement.querySelector("p").classList.add("visible")):num+=1)
+    !regex.test(inputs[2].value) ? (inputs[2].classList.add("warning"),inputs[2].placeholder="",inputs[2].parentElement.querySelector("p").classList.add("visible")) : num+=1
     num===5?(alert("Validation code has been sent to your email"),inputs.forEach(x=>x.value="")):null
 })
