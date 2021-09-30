@@ -111,6 +111,7 @@ a{
     background-image: url('./images/icon-error.svg');
     background-repeat: no-repeat;
     background-position: right 10px center;
+    color:#FF7979;
 }
 
 .warning::placeholder{
