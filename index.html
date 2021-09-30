@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/gif">
+    <link rel="stylesheet" href="./style.css">
+    <title>Signup form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="info">
+            <p class="learn">Learn to code by watching others</p>
+            <p class="detailed">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="input-form">
+            <div class="ad">
+                <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+            </div>
+            <div class="form-container">
+                <form action="post" class="form" novalidate>
+                    <div id="firstName">
+                        <input type="text" name="firstName" placeholder="First Name" required="true" autocomplete="off">
+                        <p>First Name cannot be empty</p>
+                    </div>
+                    <div id="lastName">
+                        <input type="text" name="lastName" placeholder="Last Name" required="true" autocomplete="off">
+                        <p>Last Name cannot be empty</p>
+                    </div>
+                    <div id="email">
+                        <input type="email" name="email" placeholder="Email Address" required="true" autocomplete="off">
+                        <p>Looks like this is not an email</p>
+                    </div>
+                    <div id="password">
+                        <input type="password" name="password" placeholder="Password" required="true" autocomplete="off">
+                        <p>Password cannot be empty</p>
+                    </div>
+                    <div><button>Claim your free trial</button></div>
+                    <div class="terms">
+                        <p>By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
